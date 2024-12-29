@@ -20,8 +20,7 @@
 #define RGB_DISABLE_WHEN_USB_SUSPENDED
 
 /* DIP switch for Mac/win OS switch */
-#define DIP_SWITCH_PINS \
-    { A8 }
+#define DIP_SWITCH_PINS {A8}
 
 /* Encoder Configuration */
 #ifdef ENCODER_ENABLE
@@ -45,11 +44,9 @@
 
 #        define LED_DRIVER_SHUTDOWN_PIN C14
 
-#        define HOST_LED_MATRIX_LIST \
-            { 17, 18, 19 }
+#        define HOST_LED_MATRIX_LIST {17, 18, 19}
 
-#        define BAT_LEVEL_LED_LIST \
-            { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+#        define BAT_LEVEL_LED_LIST {17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
 
 /* Backlit disable timeout when keyboard is disconnected(unit: second) */
 #        define DISCONNECTED_BACKLIGHT_DISABLE_TIMEOUT 40
@@ -82,3 +79,7 @@
 /* Factory test keys */
 #define FN_KEY1 MO(1)
 #define FN_KEY2 MO(3)
+
+/* My Stuff */
+#define TAPPING_TERM 350
+#define PERMISSIVE_HOLD
