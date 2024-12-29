@@ -21,8 +21,7 @@
 #define LED_DISABLE_WHEN_USB_SUSPENDED
 
 /* DIP switch */
-#define DIP_SWITCH_PINS \
-    { A8 }
+#define DIP_SWITCH_PINS {A8}
 
 /* Increase I2C speed to 1000 KHz */
 #define I2C1_TIMINGR_PRESC 0U
@@ -51,11 +50,9 @@
 
 #        define LED_DRIVER_SHUTDOWN_PIN C14
 
-#        define HOST_LED_MATRIX_LIST \
-            { 16, 17, 18 }
+#        define HOST_LED_MATRIX_LIST {16, 17, 18}
 
-#        define BAT_LEVEL_LED_LIST \
-            { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }
+#        define BAT_LEVEL_LED_LIST {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 /* Backlit disable timeout when keyboard is disconnected(unit: second) */
 #        define DISCONNECTED_BACKLIGHT_DISABLE_TIMEOUT 40
@@ -84,3 +81,7 @@
 
 /* Factory test keys */
 #define FN_KEY1 MO(4)
+
+/* My stuff */
+#define TAPPING_TERM 350
+#define PERMISSIVE_HOLD
